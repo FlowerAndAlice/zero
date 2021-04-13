@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>libr</title>
+    <base href="" target="_blank">
+    <style>
+        div.mv {
+            background: #c4a7cf url(05.jpg);
+            background-size: contain;
+            position: relative;
+            animation: mymove 5s infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            background-repeat: no-repeat;
+            width: 400px;
+            height: 666px;
+            background-clip: border-box;
+            margin: 20px;
+            border: 30px rgb(188, 141, 192);
+            background-blend-mode: multiply;
+            border-radius: 25px;
+            border-style: dotted dashed double dashed;
+            box-shadow: 20px 20px 15px 10px plum;
+        }
+        
+        table {
+            border-collapse: separate;
+        }
+        
+        @keyframes mymove {
+            0% {
+                background-image: url(https://z3.ax1x.com/2021/04/13/cr2DVU.jpg);
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-image: url(https://z3.ax1x.com/2021/04/13/cr2DVU.jpg);
+                left: 0px;
+                top: 200px;
+            }
+            50% {
+                background-image: url(https://z3.ax1x.com/2021/04/13/cr2DVU.jpg);
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-image: url(https://z3.ax1x.com/2021/04/13/cr2DVU.jpg);
+                left: 200px;
+                top: 0px;
+            }
+            100% {
+                background-image: url(https://z3.ax1x.com/2021/04/13/cr2DVU.jpg);
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        a::after {
+            content: "("attr(href)")";
+            cursor: help;
+        }
+        
+        .sl {
+            border: 1px solid #e3e3e3;
+            border-radius: 6px;
+            color: #616263;
+            height: 30px;
+            width: 240px;
+            position: relative;
+            display: block;
+            background-color: thistle;
+            margin-top: 50px;
+        }
+        
+        select {
+            height: 30px;
+            padding: 5px;
+            background-color: #ececec;
+            border: 0px;
+            outline: none;
+            width: 240px;
+            appearance: none;
+            background-color: powderblue;
+        }
+        
+        .sl:after {
+            content: "▼";
+            padding: 12px 8px;
+            position: absolute;
+            top: -5px;
+            right: -100px;
+            z-index: 1;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: pink;
+        }
+        
+        #haoye {
+            text-align: right;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            z-index: -1;
+        }
+        
+        a {
+            background-color: powderblue;
+            border: 2px solid rgb(164, 218, 156);
+            border-radius: 13px;
+            text-decoration: none;
+            font-family: "comic sans ms";
+            height: auto;
+            width: auto;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sl">
+        <select name="抽卡" id="">
+<option value="">迪卢克</option>
+<option value="">七七</option>
+<option value="" selected>阿莫斯</option>
+</select>
+
+
+        <div style="margin: 100px;" class="mv"></div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="haoye"><a href="http://space.bilibili.com/388863477"> 俺的小破站</a></div>
+</body>
+
+</html>
